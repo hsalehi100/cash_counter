@@ -21,107 +21,195 @@
 
 
         <div class="row">
-          <div class="col s6 card-panel grey lighten-4" style="padding:0.9rem;">
+          <div class="col s4 card-panel grey lighten-4" style="padding:0.9rem;">
               <div class="row">
                 <h5 class="center-align">Coins</h5>
-                <div class="input-field col s6">
-                  <input id="five_cent" type="number" class="validate" >
+                <div class="input-field col s12">
+                  <input id="five_cent" type="text" name="fcent" value="0" class="validate" onFocus="clear_field(this)">
                   <label for="five_cent">$0.05</label>
                 </div>
+              </div>
 
-                <div class="input-field col s6">
-                  <input id="ten_cent" type="number" class="validate">
+            <!--10 cents-->
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="ten_cent" type="text" name="tcent" value="0" class="validate" onFocus="clear_field(this)">
                   <label for="ten_cent">$0.10</label>
                 </div>
+              </div>
 
-                <div class="input-field col s6">
-                  <input id="twentyfive_cent" type="number" class="validate">
+              <!--25 cents-->
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="twentyfive_cent" type="text" name="tfcent" value="0" class="validate" onFocus="clear_field(this)">
                   <label for="twentyfive_cent">$0.25</label>
                 </div>
+              </div>
 
-                <div class="input-field col s6">
-                  <input id="loonie" type="number" class="validate">
+              <!-- loonie-->
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="loonie" type="text" name="loonie" value="0" class="validate" onFocus="clear_field(this)">
                   <label for="loonie">$1</label>
                 </div>
+              </div>
 
-                <div class="input-field col s6">
-                  <input id="toonie" type="number" class="validate">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="toonie" type="text" name="toonie" value="0" class="validate" onFocus="clear_field(this)">
                   <label for="toonie">$2</label>
                 </div>
               </div>
+          </div>
 
-              <div class="row">
-                <h5 class="center-align">Bills</h5>
-                <div class="input-field col s6">
-                  <input id="five" type="number" class="validate">
-                  <label for="five">$5</label>
-                </div>
 
-                <div class="input-field col s6">
-                  <input id="ten" type="number" class="validate">
-                  <label for="ten">$10</label>
-                </div>
+          <div class="col s4 card-panel grey lighten-4" style="padding:0.9rem;">
+            <div class="row">
+              <h5 class="center-align">Bills</h5>
+              <div class="input-field col s12">
+                <input id="five"type="text" name="five" value="0" class="validate" onFocus="clear_field(this)">
+                <label for="five">$5</label>
+              </div>
+            </div>
 
-                <div class="input-field col s6">
-                  <input id="twenty" type="number" class="validate">
-                  <label for="twentyt">$20</label>
-                </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="ten" type="text" name="ten" value="0" class="validate" onFocus="clear_field(this)">
+                <label for="ten">$10</label>
+              </div>
+            </div>
 
-                <div class="input-field col s6">
-                  <input id="fifty" type="number" class="validate">
-                  <label for="fifty">$50</label>
-                </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="twenty" type="text" name="twenty" value="0" class="validate" onFocus="clear_field(this)">
+                <label for="twentyt">$20</label>
+              </div>
+            </div>
 
-                <div class="input-field col s6">
-                  <input id="hundred" type="number" class="validate">
-                  <label for="hundred">$100</label>
-                </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="fifty" type="text" name="fifty" value="0" class="validate" onFocus="clear_field(this)">
+                <label for="fifty">$50</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="hundred" type="text" name="hundred" value="0" class="validate" onFocus="clear_field(this)">
+                <label for="hundred">$100</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col s4 card-panel grey lighten-4" style="padding:0.9rem;">
+            <div class="row">
+              <h5 class="center-align">Coin Rolls</h5>
+              <div class="input-field col s12">
+                <input id="five_roll" type="text" name="froll" value="0" class="validate" onFocus="clear_field(this)">
+                <label for="five_roll">$0.05</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="ten_roll" type="text" name="troll" value="0" class="validate" onFocus="clear_field(this)">
+                <label for="ten_roll">$0.10</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="twentyfive_roll" type="text" name="tfroll" value="0" class="validate" onFocus="clear_field(this)">
+                <label for="twentyfive_roll">$0.25</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="loonie_roll" type="text" name="lroll" value="0" class="validate" onFocus="clear_field(this)">
+                <label for="loonie_roll">$1</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="toonie_roll" type="text" name="tooroll" value="0" class="validate" onFocus="clear_field(this)">
+                <label for="toonie_roll">$2</label>
+              </div>
+            </div>
+          </div>
+
+          <br>
+
+
+          <div class="col s12 card-panel grey lighten-4" style="padding:0.9rem;">
+            <div class="row">
+              <div class="col s2 push-s1">
+                <button class="btn waves-effect waves-light red" id="calculate" onClick="calculate()">Calculate</button>
               </div>
 
-              <div class="row">
-                <h5 class="center-align">Coin Rolls</h5>
-                <div class="input-field col s6">
-                  <input id="five_roll" type="number" class="validate">
-                  <label for="five_roll">$0.05</label>
-                </div>
-
-                <div class="input-field col s6">
-                  <input id="ten_roll" type="number" class="validate">
-                  <label for="ten_roll">$0.10</label>
-                </div>
-
-                <div class="input-field col s6">
-                  <input id="twentyfive_roll" type="number" class="validate">
-                  <label for="twentyfive_roll">$0.25</label>
-                </div>
-
-                <div class="input-field col s6">
-                  <input id="loonie_roll" type="number" class="validate">
-                  <label for="loonie_roll">$1</label>
-                </div>
-
-                <div class="input-field col s6">
-                  <input id="toonie_roll" type="number" class="validate">
-                  <label for="toonie_roll">$2</label>
-                </div>
+              <div class="col s4 push-s2">
+                <input type=text name=total size=5 value="0" readonly>
               </div>
 
-              <div class="row">
-                <div class="col s2">
-                  <button class="btn waves-effect waves-light red" id="calculate" onclick="sumar()">Calculate</button>
-                </div>
+              <div class="col s2 push-s4">
+                <button class="btn waves-effect waves-light red" type="reset" id="reset" name="action" onclick="reset()">Reset</button>
+              </div>
 
-                <div class="col s4 push-s3">
-                  <span id="total">TOTAL: $0</span>
-                </div>
+            </div>
+          </div>
 
-                <div class="col s2 push-s4">
-                  <button class="btn waves-effect waves-light red" type="reset" id="reset" name="action">Reset</button>
-                </div>
 
+
+          <br>
+
+          <!--multi till section -->
+          <div class="col s12 card-panel grey lighten-4" style="padding:0.9rem;">
+            <div class="row">
+              <h5 class="center-align">Multi Till Totals</h5>
+              <div class="input-field col s4">
+                <input id="till1" type="text" name="till1" value="0" class="validate" onFocus="clear_field(this)" >
+                <label for="till1">TILL 1</label>
               </div>
 
 
+
+              <div class="input-field col s4">
+                <input id="till2" type="text" name="till2" value="0" class="validate" onFocus="clear_field(this)" >
+                <label for="till2">TILL 2</label>
+              </div>
+
+
+
+              <div class="input-field col s4">
+                <input id="till3" type="text" name="till3" value="0" class="validate" onFocus="clear_field(this)" >
+                <label for="till3">TILL 3</label>
+              </div>
+          </div>
+
+            <div class="row">
+              <div class="col s2 push-s4">
+                <button class="btn waves-effect waves-light red" id="calculate" onclick="tills()">Calculate</button>
+              </div>
+
+              <div class="col s2 push-s5">
+                <button class="btn waves-effect waves-light red" type="reset" id="reset" name="reset_tills()" onclick="reset_tills()">Reset</button>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col s4 push-s2">
+                <h4 id="tilltotal">TOTAL:</h4>
+                <input type=text name=tot size=3 value="0" readonly>
+              </div>
+
+              <div class="col s4 push-s3">
+                <h4 id="deposit" class="red-text">DEPOSIT:</h4>
+                <input type=text name=deposit size=3 value="0" readonly>
+              </div>
+            </div>
 
 
 
@@ -132,6 +220,7 @@
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/calculate.js"></script>
+      <script type="text/javascript" src="js/calc.js"></script>
 
     </body>
 </html>
