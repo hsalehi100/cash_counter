@@ -24,40 +24,59 @@
           <div class="col s4 card-panel grey lighten-4" style="padding:0.9rem;">
               <div class="row">
                 <h5 class="center-align">Coins</h5>
-                <div class="input-field col s12">
-                  <input id="five_cent" type="text" name="fcent" value="0" class="validate" onFocus="clear_field(this)">
+                <div class="input-field col s8">
+                  <input id="five_cent" type="text" name="fcent" value="0" class="validate" onFocus="clear_field(this)" onkeyup="calculate()">
                   <label for="five_cent">$0.05</label>
+                </div>
+                <div class="col s4 center-align">
+                  <h5 id="fcout">$0.00</h5>
                 </div>
               </div>
 
             <!--10 cents-->
               <div class="row">
-                <div class="input-field col s12">
-                  <input id="ten_cent" type="text" name="tcent" value="0" class="validate" onFocus="clear_field(this)">
+                <div class="input-field col s8">
+                  <input id="ten_cent" type="text" name="tcent" value="0" class="validate" onFocus="clear_field(this)" onkeyup="calculate()">
                   <label for="ten_cent">$0.10</label>
+                </div>
+
+                <div class="col s4 center-align">
+                  <h5 id="tcout">$0.00</h5>
                 </div>
               </div>
 
               <!--25 cents-->
               <div class="row">
-                <div class="input-field col s12">
-                  <input id="twentyfive_cent" type="text" name="tfcent" value="0" class="validate" onFocus="clear_field(this)">
+                <div class="input-field col s8">
+                  <input id="twentyfive_cent" type="text" name="tfcent" value="0" class="validate" onFocus="clear_field(this)" onkeyup="calculate()">
                   <label for="twentyfive_cent">$0.25</label>
+                </div>
+
+                <div class="col s4 center-align">
+                  <h5 id="tfcout">$0.00</h5>
                 </div>
               </div>
 
               <!-- loonie-->
               <div class="row">
-                <div class="input-field col s12">
-                  <input id="loonie" type="text" name="loonie" value="0" class="validate" onFocus="clear_field(this)">
+                <div class="input-field col s8">
+                  <input id="loonie" type="text" name="loonie" value="0" class="validate" onFocus="clear_field(this)" onkeyup="calculate()">
                   <label for="loonie">$1</label>
+                </div>
+
+                <div class="col s4 center-align">
+                  <h5 id="lcout">$0.00</h5>
                 </div>
               </div>
 
               <div class="row">
-                <div class="input-field col s12">
-                  <input id="toonie" type="text" name="toonie" value="0" class="validate" onFocus="clear_field(this)">
+                <div class="input-field col s8">
+                  <input id="toonie" type="text" name="toonie" value="0" class="validate" onFocus="clear_field(this)" onkeyup="calculate()">
                   <label for="toonie">$2</label>
+                </div>
+
+                <div class="col s4 center-align">
+                  <h5 id="toocout">$0.00</h5>
                 </div>
               </div>
           </div>
@@ -66,37 +85,57 @@
           <div class="col s4 card-panel grey lighten-4" style="padding:0.9rem;">
             <div class="row">
               <h5 class="center-align">Bills</h5>
-              <div class="input-field col s12">
-                <input id="five"type="text" name="five" value="0" class="validate" onFocus="clear_field(this)">
+              <div class="input-field col s8">
+                <input id="five"type="text" name="five" value="0" class="validate" onFocus="clear_field(this)" onkeyup="calculate()">
                 <label for="five">$5</label>
               </div>
+
+              <div class="col s4 center-align">
+                <h5 id="fivecout">$0.00</h5>
+              </div>
             </div>
 
             <div class="row">
-              <div class="input-field col s12">
-                <input id="ten" type="text" name="ten" value="0" class="validate" onFocus="clear_field(this)">
+              <div class="input-field col s8">
+                <input id="ten" type="text" name="ten" value="0" class="validate" onFocus="clear_field(this)" onkeyup="calculate()">
                 <label for="ten">$10</label>
               </div>
+
+              <div class="col s4 center-align">
+                <h5 id="tencout">$0.00</h5>
+              </div>
             </div>
 
             <div class="row">
-              <div class="input-field col s12">
-                <input id="twenty" type="text" name="twenty" value="0" class="validate" onFocus="clear_field(this)">
+              <div class="input-field col s8">
+                <input id="twenty" type="text" name="twenty" value="0" class="validate" onFocus="clear_field(this)" onkeyup="calculate()">
                 <label for="twentyt">$20</label>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="fifty" type="text" name="fifty" value="0" class="validate" onFocus="clear_field(this)">
-                <label for="fifty">$50</label>
+              <div class="col s4 center-align">
+                <h5 id="twcout">$0.00</h5>
               </div>
             </div>
 
             <div class="row">
-              <div class="input-field col s12">
-                <input id="hundred" type="text" name="hundred" value="0" class="validate" onFocus="clear_field(this)">
+              <div class="input-field col s8">
+                <input id="fifty" type="text" name="fifty" value="0" class="validate" onFocus="clear_field(this)" onkeyup="calculate()">
+                <label for="fifty">$50</label>
+              </div>
+
+              <div class="col s4 center-align">
+                <h5 id="fifcout">$0.00</h5>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s8">
+                <input id="hundred" type="text" name="hundred" value="0" class="validate" onFocus="clear_field(this)" onkeyup="calculate()">
                 <label for="hundred">$100</label>
+              </div>
+
+              <div class="col s4 center-align">
+                <h5 id="huncout">$0.00</h5>
               </div>
             </div>
           </div>
@@ -105,37 +144,57 @@
           <div class="col s4 card-panel grey lighten-4" style="padding:0.9rem;">
             <div class="row">
               <h5 class="center-align">Coin Rolls</h5>
-              <div class="input-field col s12">
-                <input id="five_roll" type="text" name="froll" value="0" class="validate" onFocus="clear_field(this)">
+              <div class="input-field col s8">
+                <input id="five_roll" type="text" name="froll" value="0" class="validate" onFocus="clear_field(this)" onkeyup="calculate()">
                 <label for="five_roll">$0.05</label>
               </div>
+
+              <div class="col s4 center-align">
+                <h5 id="frcout">$0.00</h5>
+              </div>
             </div>
 
             <div class="row">
-              <div class="input-field col s12">
-                <input id="ten_roll" type="text" name="troll" value="0" class="validate" onFocus="clear_field(this)">
+              <div class="input-field col s8">
+                <input id="ten_roll" type="text" name="troll" value="0" class="validate" onFocus="clear_field(this)" onkeyup="calculate()">
                 <label for="ten_roll">$0.10</label>
               </div>
+
+              <div class="col s4 center-align">
+                <h5 id="trcout">$0.00</h5>
+              </div>
             </div>
 
             <div class="row">
-              <div class="input-field col s12">
-                <input id="twentyfive_roll" type="text" name="tfroll" value="0" class="validate" onFocus="clear_field(this)">
+              <div class="input-field col s8">
+                <input id="twentyfive_roll" type="text" name="tfroll" value="0" class="validate" onFocus="clear_field(this)" onkeyup="calculate()">
                 <label for="twentyfive_roll">$0.25</label>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="loonie_roll" type="text" name="lroll" value="0" class="validate" onFocus="clear_field(this)">
-                <label for="loonie_roll">$1</label>
+              <div class="col s4 center-align">
+                <h5 id="tfrcout">$0.00</h5>
               </div>
             </div>
 
             <div class="row">
-              <div class="input-field col s12">
-                <input id="toonie_roll" type="text" name="tooroll" value="0" class="validate" onFocus="clear_field(this)">
+              <div class="input-field col s8">
+                <input id="loonie_roll" type="text" name="lroll" value="0" class="validate" onFocus="clear_field(this)"onkeyup="calculate()">
+                <label for="loonie_roll">$1</label>
+              </div>
+
+              <div class="col s4 center-align">
+                <h5 id="lrcout">$0.00</h5>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s8">
+                <input id="toonie_roll" type="text" name="tooroll" value="0" class="validate" onFocus="clear_field(this)" onkeyup="calculate()">
                 <label for="toonie_roll">$2</label>
+              </div>
+
+              <div class="col s4 center-align">
+                <h5 id="toorcout">$0.00</h5>
               </div>
             </div>
           </div>
@@ -169,21 +228,21 @@
             <div class="row">
               <h5 class="center-align">Multi Till Totals</h5>
               <div class="input-field col s4">
-                <input id="till1" type="text" name="till1" value="0" class="validate" onFocus="clear_field(this)" >
+                <input id="till1" type="text" name="till1" value="0" class="validate" onFocus="clear_field(this)" onkeyup="tills()">
                 <label for="till1">TILL 1</label>
               </div>
 
 
 
               <div class="input-field col s4">
-                <input id="till2" type="text" name="till2" value="0" class="validate" onFocus="clear_field(this)" >
+                <input id="till2" type="text" name="till2" value="0" class="validate" onFocus="clear_field(this)" onkeyup="tills()" >
                 <label for="till2">TILL 2</label>
               </div>
 
 
 
               <div class="input-field col s4">
-                <input id="till3" type="text" name="till3" value="0" class="validate" onFocus="clear_field(this)" >
+                <input id="till3" type="text" name="till3" value="0" class="validate" onFocus="clear_field(this)" onkeyup="tills()" >
                 <label for="till3">TILL 3</label>
               </div>
           </div>
@@ -200,12 +259,17 @@
             </div>
 
             <div class="row">
-              <div class="col s4 push-s2">
+              <div class="col s4">
+                <h4 id="tilltotal">FLOAT:</h4>
+                <input type=text name=float size=3 value="500">
+              </div>
+
+              <div class="col s4">
                 <h4 id="tilltotal">TOTAL:</h4>
                 <input type=text name=tot size=3 value="0" readonly>
               </div>
 
-              <div class="col s4 push-s3">
+              <div class="col s4">
                 <h4 id="deposit" class="red-text">DEPOSIT:</h4>
                 <input type=text name=deposit size=3 value="0" readonly>
               </div>
